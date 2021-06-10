@@ -1,0 +1,63 @@
+:host{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+
+#row{
+    width: 100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar {
+    width: 12px;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #1c836daf;
+}
+
+.scrollbar-deep-purple {
+    scrollbar-color:  #1c836daf #F5F5F5;
+}
+
+#fBox{
+    width: 700px;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    box-shadow: 0 0 3px 0 black;
+    transition: all 0.6s ease-in-out;
+}
+
+#fBox:hover{
+    transform: scale(0.95);
+}
+
+#fBox>*{
+    flex: 0 0 auto;
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 10px;
+}

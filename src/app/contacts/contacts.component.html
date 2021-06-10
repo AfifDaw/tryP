@@ -1,0 +1,25 @@
+<app-navbar></app-navbar><br><br><br><br><br>
+<div style="width: 100%; display: flex; flex-wrap: wrap; justify-content:space-around;">
+    <ng-container *ngFor="let dev of developers">
+        <div class="col-ms-4" style="box-shadow: black 0 0 15px 0;">
+            <div class="bs-component">
+            <div class="card">
+                <h3 class="card-header">{{dev.Name}}</h3>
+                <div class="card-body">
+                <h5 class="card-title">WEBDEVELOPER</h5>
+                </div>
+                <img style="border-radius: 25%; width: 512px; height: 512px;" [src]="dev.Img" alt="">
+                <div class="card-body">
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">ID : {{dev.ID}}</li>
+                <li class="list-group-item">From : {{dev.Country}}</li>
+                <li class="list-group-item">Email : {{dev.Email}}</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </ng-container>
+</div>
+<br><br><br><br><br>
+<app-footer></app-footer>

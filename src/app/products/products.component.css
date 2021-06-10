@@ -1,0 +1,21 @@
+#prodCon{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+#sideNav{
+    display: flex;
+    position: fixed;
+    top: 75px;
+    left: 15px;
+}
+
+#prodList{
+    display: flex;
+    margin-left: 200px;
+    margin-top: 75px;
+}
+
+

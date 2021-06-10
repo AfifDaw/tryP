@@ -1,0 +1,42 @@
+#flexBox{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    width: 100%;
+}
+
+#purchaseCard{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 15%;
+    left: 73%;
+}
+.row{
+    width: 70%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar {
+    width: 12px;
+    height: 100%;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-deep-purple::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #1c836daf;
+}
+
+.scrollbar-deep-purple {
+    scrollbar-color:  #1c836daf #F5F5F5;
+}
