@@ -41,9 +41,12 @@ export class ProductsService {
   }
 
   removeCartItem(prod){
-    for(let i of this.cartItemsArr)
-      if(i == prod)
-        i.splice(prod,1);
+    for(let i = 0; i < this.cartItemsArr.length; i += 1){
+      if(this.cartItemsArr[i] === prod){
+        this.cartItemsArr.splice(i, 1);
+        return
+      }
+    }
   }
 
 

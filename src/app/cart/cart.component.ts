@@ -33,17 +33,17 @@ export class CartComponent implements OnInit {
     this.totalPayment -= prod.Price;
   }
 
-  removeItem = (prod) => {
+  removeItem(prod){
     for(let item of this.cartList){
-      if(item == prod){
-        this.cartList.splice(prod, 1);
+      if(item === prod){
         this.prodSer.removeCartItem(prod);
-        this.prodSer.decCounter();
+        this.prodSer.decCounter();       
         this.cartCount -= 1;
         this.decPricePayment(prod);
+        alert("Item Got Removed From Cart.");
+        return     
       }
     }
-    alert("Item Got Removed From Cart.");
   }
 
   checkOutBtn(){
